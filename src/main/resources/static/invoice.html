@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        table {
+            border: 3px solid black;
+            font-size: x-large;
+        }
+        tr td{
+            padding: 30px;
+        }
+        body {
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+        }
+        h1 {
+            margin: 40px;
+        }
+        .last {
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 30px;
+        }
+        div {
+            font-size: 20px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transaction details</h1>
+    <div class="first">
+        Greetings %s,
+        <div>Below contains the details of your payment</div>
+    </div>
+    <table rules="all">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Transaction ID</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>%s</td>
+                <td>%s</td>
+                <td>%s</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="last">
+        <div>Your appointment is booked successfully.</div>
+        <div>You will get another email with appointment details shortly.</div>
+    </div>
+    <div>
+        <div>Yours faithfully,</div>
+        <div>Health Care</div>
+    </div>
+</body>
+</html>

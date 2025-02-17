@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Mail</title>
+	    <style>
+	        .div{
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            flex-direction: column;
+	        }
+	        .inside-div {
+	            display: flex;
+	            margin-bottom: 15px;
+	            /* font-size: 25px; */
+	            margin-left: 50px;
+	        }
+	        body {
+	            font-size: 25px;
+	        }
+	    </style>
+		
+	</head>
+	<body>
+	    <!--<div class="div">
+	        <h1>Your Appointment has booked successfully!!</h1>
+	    </div>-->
+	    <div style=" margin-bottom: 20px;">
+	        <strong class="text-success bg-success">Greetings!!</strong><br>
+	        <br>
+	        We Hope this email finds you well, <br>We are from Health Care, your appointment request has been successfully processed. Please go the through the below details for further process.
+	    </div>
+	    <div class="inside-div">
+	        <strong>Doctor Name: </strong> &nbsp; %s
+	    </div>
+	    <div class="inside-div">
+	        <strong>Date:</strong> &nbsp; %s
+	    </div>
+	    <div class="inside-div">
+	        <strong>Timings:</strong> &nbsp; %s
+	    </div>
+	    <div class="inside-div">
+	        <strong>Specialization:</strong>&nbsp; %s
+	    </div>
+	    <div class="inside-div">
+	        <strong>Type of Appointment:</strong> &nbsp; %s
+	    </div>
+	    <div class="inside-div">
+	        <strong>Clinic Name:</strong> &nbsp; %s
+	    </div>
+	    <div class="inside-div">
+	        <strong>Address:</strong> &nbsp; %s
+	    </div>
+	    <div style="text-align: center;">
+	        Thank you for choosing health care
+	    </div>
+		
+		
+	</body>
+	</html>
+				
